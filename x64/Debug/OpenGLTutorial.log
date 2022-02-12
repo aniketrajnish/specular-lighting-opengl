@@ -1,0 +1,29 @@
+﻿  D:\OpenGLTutorial\
+  camera.cpp
+  light.cpp
+  material.cpp
+D:\OpenGLTutorial\OpenGLTutorial\src\graphics\material.cpp(5,144): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\OpenGLTutorial\OpenGLTutorial\src\graphics\material.cpp(6,137): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\OpenGLTutorial\OpenGLTutorial\src\graphics\material.cpp(7,148): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\OpenGLTutorial\OpenGLTutorial\src\graphics\material.cpp(8,140): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\OpenGLTutorial\OpenGLTutorial\src\graphics\material.cpp(9,149): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\OpenGLTutorial\OpenGLTutorial\src\graphics\material.cpp(10,147): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\OpenGLTutorial\OpenGLTutorial\src\graphics\material.cpp(11,164): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\OpenGLTutorial\OpenGLTutorial\src\graphics\material.cpp(12,145): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\OpenGLTutorial\OpenGLTutorial\src\graphics\material.cpp(13,131): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\OpenGLTutorial\OpenGLTutorial\src\graphics\material.cpp(14,148): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\OpenGLTutorial\OpenGLTutorial\src\graphics\material.cpp(15,148): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\OpenGLTutorial\OpenGLTutorial\src\graphics\material.cpp(16,152): warning C4305: 'initializing': truncation from 'double' to 'float'
+  mesh.cpp
+D:\OpenGLTutorial\OpenGLTutorial\src\graphics\mesh.cpp(47,66): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  model.cpp
+  texture.cpp
+  main.cpp
+D:\OpenGLTutorial\OpenGLTutorial\src\graphics\models\cube.hpp(63,30): warning C4018: '<': signed/unsigned mismatch
+D:\OpenGLTutorial\OpenGLTutorial\src\main.cpp(31,7): warning C4101: 'infoLog': unreferenced local variable
+D:\OpenGLTutorial\OpenGLTutorial\src\main.cpp(30,6): warning C4101: 'success': unreferenced local variable
+  shader.cpp
+  Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  OpenGLTutorial.vcxproj -> D:\OpenGLTutorial\x64\Debug\OpenGLTutorial.exe
+  D:\OpenGLTutorial\
