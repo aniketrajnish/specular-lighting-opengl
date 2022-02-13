@@ -68,10 +68,10 @@ Properties of spotlight can be changed by making the following changes in main.c
 * Initialization
 ```
 SpotLight s = {
-		Camera::cam.pos, Camera::cam.cameraFront,
-		//desired inner cut off, //desired outer cut off,
-		1.0f, 0.07f, 0.032f, // attenuation constants
-		//desired ambience, //desired diffusion, //desired specular value
-	};
+    Camera::cam.pos, Camera::cam.cameraFront,
+    //desired inner cut off, //desired outer cut off,
+    1.0f, 0.07f, 0.032f, // attenuation constants
+    //desired ambience, //desired diffusion, //desired specular value
+};
  ```
 
