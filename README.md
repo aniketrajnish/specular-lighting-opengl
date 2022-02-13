@@ -56,11 +56,11 @@ glm::vec3 pointLightPositions[] = {
 * Initialization
 ```
 for (unsigned int i = 0; i < //desired number; i++) {
-		lamps[i] = Lamp(// rgb of desired color,
-			//desired ambience, //desired diffusion, //desired specular value,
-			1.0f, 0.07f, 0.032f,
-			pointLightPositions[i], //desired size;
-		lamps[i].init();
-	}
+    lamps[i] = Lamp(// rgb of desired color,
+    	//desired ambience, //desired diffusion, //desired specular value,
+    	1.0f, 0.07f, 0.032f,
+    	pointLightPositions[i], //desired size;
+    lamps[i].init();
+}
  ```
 
