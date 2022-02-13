@@ -58,9 +58,20 @@ glm::vec3 pointLightPositions[] = {
 for (unsigned int i = 0; i < //desired number; i++) {
     lamps[i] = Lamp(// rgb of desired color,
     	//desired ambience, //desired diffusion, //desired specular value,
-    	1.0f, 0.07f, 0.032f,
+    	1.0f, 0.07f, 0.032f, // attenuation constants
     	pointLightPositions[i], //desired size;
     lamps[i].init();
 }
+ ```
+# Changing the properties of spotlight
+Properties of spotlight can be changed by making the following changes in main.cpp
+* Initialization
+```
+SpotLight s = {
+		Camera::cam.pos, Camera::cam.cameraFront,
+		//desired inner cut off, //desired outer cut off,
+		1.0f, 0.07f, 0.032f, // attenuation constants
+		//desired ambience, //desired diffusion, //desired specular value
+	};
  ```
 
