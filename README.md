@@ -22,7 +22,7 @@ Texture tex_specular("assets/your_name.png", "material.specular");
 ```
 glClearColor(// your RGBA here);
 ```
-# Changing the porperties of Cubes
+# Changing the properties of Cubes
 Properties of cubes can be changed by making the following changes in main.cpp
 * Declaration
 ```
@@ -41,7 +41,7 @@ for (unsigned int i = 0; i < //desired number; i++) {
     cubes[i].init();    
 }
  ```
- # Changing the porperties of Lamps
+ # Changing the properties of Lamps
 Properties of lamps can be changed by making the following changes in main.cpp
 * Declaration
 ```
