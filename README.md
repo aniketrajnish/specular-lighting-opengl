@@ -11,19 +11,19 @@ https://user-images.githubusercontent.com/58925008/153727298-6eea2a8c-8e6f-4ddd-
 * Open the solution file using VS 2014 or newer.
 
 # Changing the texture
-* Import the albedo and specular maps in the \assets folder.
-* Change the albedo and specular names in cube.hpp
+* Import the albedo and specular maps in the `\assets` folder.
+* Change the albedo and specular names in `cube.hpp`
 ```
 Texture tex("assets/your_name.png", "material.diffuse");
 Texture tex_specular("assets/your_name.png", "material.specular");
 ```
 # Changing the background
-* Change the RGBA values of colour buffer in the rendering loop of main.cpp
+* Change the RGBA values of colour buffer in the rendering loop of `main.cpp`
 ```
 glClearColor(// your RGBA here);
 ```
 # Changing the properties of Cubes
-Properties of cubes can be changed by making the following changes in main.cpp
+Properties of cubes can be changed by making the following changes in `main.cpp`
 * Declaration
 ```
 Cube cubes[//desired number];
@@ -42,7 +42,7 @@ for (unsigned int i = 0; i < //desired number; i++) {
 }
  ```
  # Changing the properties of Lamps
-Properties of lamps can be changed by making the following changes in main.cpp
+Properties of lamps can be changed by making the following changes in `main.cpp`
 * Declaration
 ```
 Lamp lamps[//desired number];
@@ -64,7 +64,7 @@ for (unsigned int i = 0; i < //desired number; i++) {
 }
  ```
 # Changing the properties of spotlight
-Properties of spotlight can be changed by making the following changes in main.cpp
+Properties of spotlight can be changed by making the following changes in `main.cpp`
 * Initialization
 ```
 SpotLight s = {
