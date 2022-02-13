@@ -12,4 +12,10 @@ https://user-images.githubusercontent.com/58925008/153727298-6eea2a8c-8e6f-4ddd-
 
 # Changing the texture
 * Import the albedo and specular maps in the \assets folder.
-* 
+* Change the albedo and specular names in cube.hpp
+```
+Texture tex("assets/your_name.png", "material.diffuse");
+Texture tex_specular("assets/your_name.png", "material.specular");
+```
+
+
