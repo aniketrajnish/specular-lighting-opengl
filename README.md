@@ -1,4 +1,4 @@
-# specular lighting in opengl
+# Specular lighting in OpenGL
  Specular Lighting in OpenGL (Followed tutorial by [Michael Grieco](https://michaelg29.github.io/)).  
 
 https://user-images.githubusercontent.com/58925008/153727298-6eea2a8c-8e6f-4ddd-b9a8-e7ac1701fc9a.mp4
@@ -17,5 +17,9 @@ https://user-images.githubusercontent.com/58925008/153727298-6eea2a8c-8e6f-4ddd-
 Texture tex("assets/your_name.png", "material.diffuse");
 Texture tex_specular("assets/your_name.png", "material.specular");
 ```
-
+# Changing the background
+* Change the RGBA values of colour buffer in the rendering loop of main.cpp
+```
+glClearColor(// your RGBA here);
+```
 
