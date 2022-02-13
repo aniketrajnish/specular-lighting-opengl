@@ -22,4 +22,22 @@ Texture tex_specular("assets/your_name.png", "material.specular");
 ```
 glClearColor(// your RGBA here);
 ```
-
+# Changing the porperties of Cubes
+Properties of cubes can be changed by making the following changes in main.cpp
+* Declaration
+```
+Cube cubes[//desired number];
+```
+* Adding / Removing position vectors of the cubes accordingly
+```
+glm::vec3 cubePositions[] = {
+		// add / remove here	
+	};
+ ```
+* Initialization
+```
+for (unsigned int i = 0; i < //desired number; i++) {
+		cubes[i] = Cube(cubePositions[i], glm::vec3(//desired size));
+		cubes[i].init();
+	}
+ ```
