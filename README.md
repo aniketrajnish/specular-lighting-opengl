@@ -31,13 +31,13 @@ Cube cubes[//desired number];
 * Adding / Removing position vectors of the cubes accordingly
 ```
 glm::vec3 cubePositions[] = {
-		// add / remove here	
-	};
+    // add / remove here	
+};
  ```
 * Initialization
 ```
 for (unsigned int i = 0; i < //desired number; i++) {
-		cubes[i] = Cube(cubePositions[i], glm::vec3(//desired size));
-		cubes[i].init();
-	}
+    cubes[i] = Cube(cubePositions[i], glm::vec3(//desired size));
+    cubes[i].init();    
+}
  ```
