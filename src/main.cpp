@@ -12,6 +12,9 @@
 #include "graphics/models/lamp.hpp"
 #include "graphics/camera.h"
 
+#define win_height 480
+#define win_width 800
+
 using namespace std;
 
 Camera Camera::cam(glm::vec3(0.0f, 0.0f, 3.0f));
@@ -39,7 +42,7 @@ int main() {
 # ifdef __APPLE__
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COPMPAT, GL_TRUE);
 #endif
-	GLFWwindow* window = glfwCreateWindow(640, 480, "Lighmapping", NULL, NULL);
+	GLFWwindow* window = glfwCreateWindow(win_width, win_height, "Lighmapping", NULL, NULL);
 	if (window == NULL) {
 		cout << "Could not open window" << endl;
 		glfwTerminate();
@@ -52,7 +55,7 @@ int main() {
 		return -1;
 	}
 
-	glViewport(0, 0, 640, 480);	
+	glViewport(0, 0, win_width, win_height);
 
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 	glEnable(GL_DEPTH_TEST);
@@ -69,7 +72,7 @@ int main() {
 
 	Cube cubes[4];
 	for (unsigned int i = 0; i < 4; i++) {
-		cubes[i] = Cube(cubePositions[i], glm::vec3(1.0f));
+		cubes[i] = Cube(cubePositions[i], glm::vec3(1.5f));
 		cubes[i].init();
 	}
 
@@ -86,7 +89,7 @@ int main() {
 		lamps[i] = Lamp(glm::vec3(1.0f),
 			glm::vec3(0.05f), glm::vec3(0.8f), glm::vec3(1.0f),
 			1.0f, 0.07f, 0.032f,
-			pointLightPositions[i], glm::vec3(0.25f));
+			pointLightPositions[i], glm::vec3(0.5f));
 		lamps[i].init();
 	}
 
@@ -113,12 +116,10 @@ int main() {
 			Camera::cam.updatePos(CameraDirection::RIGHT, diff);
 		
 		if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-			Camera::cam.updatePos(CameraDirection::LEFT, diff);
-		
+			Camera::cam.updatePos(CameraDirection::LEFT, diff);		
 
 		if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-			glfwSetWindowShouldClose(window, GL_TRUE);
-		
+			glfwSetWindowShouldClose(window, GL_TRUE);		
 
 		if (glfwGetKey(window, GLFW_KEY_F) == GLFW_PRESS) torch = true;
 		if (glfwGetKey(window, GLFW_KEY_F) == GLFW_RELEASE) torch = false;
@@ -152,7 +153,7 @@ int main() {
 		view = Camera::cam.getViewMatrix();
 		projection = glm::perspective(
 			glm::radians(Camera::cam.zoom), 
-			640.0f / 480.0f, 0.1f, 100.0f);
+			(float)win_width / win_height, 0.1f, 100.0f);
 
 		shader.setMat4("view", view);
 		shader.setMat4("projection", projection);

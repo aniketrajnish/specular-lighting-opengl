@@ -1,3 +1,7 @@
 ﻿  D:\OpenGLTutorial\
+  main.cpp
+D:\OpenGLTutorial\OpenGLTutorial\src\graphics\models\cube.hpp(63,30): warning C4018: '<': signed/unsigned mismatch
+D:\OpenGLTutorial\OpenGLTutorial\src\main.cpp(33,7): warning C4101: 'infoLog': unreferenced local variable
+D:\OpenGLTutorial\OpenGLTutorial\src\main.cpp(32,6): warning C4101: 'success': unreferenced local variable
   OpenGLTutorial.vcxproj -> D:\OpenGLTutorial\x64\Debug\OpenGLTutorial.exe
   D:\OpenGLTutorial\
